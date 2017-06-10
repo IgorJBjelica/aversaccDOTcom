@@ -1,0 +1,488 @@
+@font-face {
+	font-family: 'Theano Didot';
+	src: url('fonts/TheanoDidot.woff') format('woff');
+}
+
+h2 {
+	font-family: 'TheanoDidot', serif;
+	font-weight: 100;
+	margin: 100px 0 35px 0;
+	color: #000;
+}
+
+.hero-unit {
+	background: #eeeeee url(img/d-pic.png) no-repeat 50% top;
+	border-radius: 0;
+	line-height: 0;
+}
+
+#LOGO {
+	max-width: 600px;
+	margin-bottom: 23px;
+}
+
+.navbar {
+	padding-top: 2px;
+	border-top: solid 1px #000; 
+}
+
+.nav > li > a {
+}
+
+.navbar .nav {
+	margin: 0 auto;
+}
+
+.navbar-inner {
+	background-color: rgba(1, 42, 54, 0.84);
+	border: 0;
+	padding: .6% 17%;
+	background-image: none;
+	border-radius: 0;
+	max-width: 900px;
+	box-shadow: none;
+	z-index: 16;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover {
+	color: #fff;
+	box-shadow: none;
+	padding-bottom: 0;
+	font-size: 20px;
+	font-family: "Theano Didot";
+	z-index: 23;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:hover {
+	color: #fff;
+	padding: 10px 18px 0;
+	display: inline-block;
+	text-shadow: none;
+	font-size: 20px;
+	font-family: "Theano Didot";
+	z-index: 23;
+}
+
+.navbar .divider-vertical {
+	height: 26px;
+	margin: 10px 0;
+	border-right: 1px solid #000;
+	border-left: none;
+}
+
+/*______________________________________________Hover animation Navbar___________________________________________________________________*/
+
+ul {
+	width: 31.09em;
+	padding: 0;
+	white-space: nowrap;
+}
+
+ul li {
+	display: inline;
+	text-align: center;
+}
+
+ul li a {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 25em;
+	bottom: 0;
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+
+
+	-webkit-transition: width .3s,right .3s;
+	-moz-transition: width .3s,right .3s;
+	-o-transition: width .3s,right .3s;
+	transition: width .3s,right .3s;
+}
+
+ul li:nth-child(1) a { width: 4.382em; }
+ul li:nth-child(3) a { width: 4.25em; }
+ul li:nth-child(5) a { width: 5.418em; }
+ul li:nth-child(7) a { width: 7.15em; }
+ul li:nth-child(9) a { width: 6.582em; }
+
+ul li:last-child a::after {
+	content: "";
+	position: absolute;
+	right: inherit;
+	bottom: -3px;
+	width: inherit;
+	height: 2px;
+	background: #fff;
+	pointer-events: none;
+
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+ul li:nth-child(1) ~ li:last-child a::after {
+	right: 23.2em;
+	width: 2em;
+}
+
+ul li:nth-child(3):hover ~ li:last-child a::after {
+	right: 18.8em;
+	width: 2em;
+}
+
+ul li:nth-child(5):hover ~ li:last-child a::after {
+	right: 13.5em;
+	width: 3em;
+}
+
+ul li:nth-child(7):hover ~ li:last-child a::after {
+	right: 6.54em;
+	width: 4em;
+}
+
+ul li:nth-child(9):last-child:hover a::after {
+	right: 0;
+	width: 3.4em;
+}
+
+ul li:hover ~ li:last-child a::after,
+ul li:last-child:hover a::after { background: #fff; }
+
+ul li:last-child a {
+	min-width: 5em;
+	max-width: 5em;
+}
+
+ul li a:hover {
+	color: #fff;
+	background-color: rgba(255,255,255,.6);
+
+
+	-webkit-transition: width .3s,right .3s,background-color .3s;
+	-moz-transition: width .3s,right .3s,background-color .3s;
+	-o-transition: width .3s,right .3s,background-color .3s;
+	transition: width .3s,right .3s,background-color .3s;
+}
+
+/*_____________________________________________________________WHITE SPACE___________________________________________________________________*/
+
+.just-space {
+	width: 100%;
+	height: 200px;
+	background: #fff;
+}
+
+/*_______________________________________________________________GOALS_________________________________________________________________________*/
+
+#Goals > .container {
+	background: #6c838a;
+	width: 100%;
+	padding: 5% 0;
+}
+
+.content {
+	margin: 5% 0 0 0;
+}
+
+.white-text, h5 {
+	font-size: 14px;
+	font-family: "Gotham Rounded";
+	font-weight: 500;
+	text-align: center;
+	width: 740px;
+	z-index: 31;
+}
+
+.white-text {
+	color: rgb(255, 255, 255);
+}
+
+h4 {
+	font-size: 15px;
+	font-family: "Gotham Rounded";
+	font-weight: 500;
+	letter-spacing: 0.22em;
+	color: rgb(53, 53, 53);
+	z-index: 35;
+}
+
+#avers-text {
+	margin: 3% 0 0;
+}
+
+/*_______________________________________________________________SERVICES_________________________________________________________________________*/
+
+#Services {
+	padding-top: 6.5%;
+}
+
+.services-icon.ifc {
+	background: transparent url(img/acc.png) no-repeat;
+	background-position: center; 
+}
+
+.services-icon.iab {
+	background: transparent url(img/ab.png) no-repeat;
+	background-position: center; 
+}
+
+.services-icon.ibo {
+	background: transparent url(img/atDesk.png) no-repeat;
+	background-position: center; 
+}
+
+.services-icon.is {
+	background: transparent url(img/aStandards.png) no-repeat;
+	background-position: center; 
+}
+
+.row.serv {
+	padding-top: 3%;
+}
+
+.container-words {
+	width: 100%;
+	border-top: solid 1px #000;
+	height: 820px;
+}
+
+.jump-text {
+	text-align: left;
+	position: absolute;
+	margin: 5% -35% auto;
+	width: 38%;
+	font-family: 'TheanoDidot', serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #000;
+	opacity: 0;
+	transition: opacity 2s;
+	transition-delay: 1.15s;
+}
+
+.jump-text > strong {
+	font-size: 1.2em;
+}
+
+.ols > ol > li {
+	list-style-type: disc;
+	padding: .5% 5% .5% 0;
+	font-family: 'TheanoDidot', serif;
+	font-weight: 100;
+	color: #000;
+}
+
+.jump-text > .ol-container {
+	display: -webkit-inline-box;
+	margin-top: 4%;
+}
+
+.jump-text > .ol-container > .ols {
+	width: 88%;
+	margin-right: 5%;
+}
+
+.jump-text > .ol-container > .ols.qm {
+	width: 95%;
+	margin-right: 5%;
+}
+
+.line-green {
+	margin: 0;
+	height: 1px;
+	width: auto;
+	transition: margin 1.2s ease-in;
+}
+
+h6 {
+	font-size: 12px;
+	font-family: "Gotham Rounded";
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	margin: 0;
+	z-index: 51;
+}
+
+.services-icon {
+	border: transparent solid 2px;
+	border-radius: 50%;
+	display: block;
+	height: 6.8em;
+	width: 7.2em;
+}
+
+/*________________________________________________________HOVER ANIMATION SERVICES___________________________________________________________*/
+
+.services-icon:hover {
+	cursor: pointer;
+	animation: draw 1s ease-in forwards;
+}
+
+@keyframes draw {
+	0% {
+		border: transparent solid 2px;
+	}
+	20%{
+		border-left: #49cb68 solid 2px;
+	}
+	40%{
+		border-bottom: #49cb68 solid 2px; 
+	}
+	60%{
+		border-right: #49cb68 solid 2px; 
+	}
+	80% {
+		border-top: #49cb68 solid 2px;
+	}
+	100%{
+		border: #49cb68 solid 2px;
+	}
+}
+
+/*_______________________________________________________________WHY AVERS_________________________________________________________________________*/
+
+#Background > .container {
+	background: #6c838a;
+	width: 100%;
+	padding: 5% 0;
+}
+
+#line-thick {
+	/*inline style*/
+}
+
+p {
+	margin: 4% 0;
+	line-height: 25px;
+	font-size: 14px;
+	font-family: "Gotham Rounded";
+	font-weight: 400;
+	color: rgb(54, 54, 54);
+	width: 58%;
+	z-index: 85;
+}
+
+p > em {
+	color: #fff;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.face {
+	margin: 5% 0 4%;
+}
+
+.title {
+	color: #fff;
+	font-size: 15px;
+	font-family: "Gotham Rounded";
+	font-weight: 300;
+	margin-bottom: 0;
+	letter-spacing: 0.2em;
+}
+
+.name {
+	font-size: 15px;
+	font-family: "Gotham Rounded";
+	font-weight: 400;
+	margin-bottom: 0;
+	letter-spacing: 0.2em;
+	color: rgb(53, 53, 53);
+	z-index: 135;
+}
+
+.face-text {
+	color: #fff;
+	width: 30%;
+	font-weight: 300;
+	line-height: 20px;
+	margin: 2% 0;
+}
+
+/*_______________________________________________________________CONTACT US_________________________________________________________________________*/
+
+#Contact_Us {
+	background: #6c838a;
+	width: 100%;
+	padding: 6.2% 0 5%;
+}
+
+.to-top {
+	margin: -8% -1.9% auto;
+    position: absolute;
+}
+
+.span4.ico {
+	width: 300px;
+	padding: 20px 0;
+	background-color: rgb(255, 255, 255);
+}
+
+.contacts {
+	width: 300px;
+	font-size: 12px;
+	font-family: "Gotham Rounded";
+	font-weight: 400;
+	letter-spacing: .01em;
+	margin-bottom: 0;
+	z-index: 198;
+}
+
+.contacts.top {
+	color: #6dd586;
+	font-weight: 400;
+	margin-bottom: 18px;
+}
+
+.row.info {
+	margin-top: 9%;
+}
+
+.span1 {
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+.span1 > a > img {
+	height: 40px;
+}
+
+/*_______________________________________________________________COPYRIGHT_________________________________________________________________________*/
+
+#copyright > .container {
+	background-color: rgb(17, 17, 17);
+	width: 100%;
+	z-index: 171;
+	height: 55px;
+	padding-top: 1.2%;
+}
+
+#copy-left {
+	text-align: left;
+	float: left;
+	width: auto;
+	font-weight: 300;
+	font-size: 14px;
+	font-family: "Gotham Rounded";
+	letter-spacing: .03em;
+	color: #fff;
+	z-index: 175;
+}
+
+.pull-right {
+	text-align: right;
+	width: auto;
+	font-weight: 300;
+	font-size: 14px;
+	font-family: "Gotham Rounded";
+	letter-spacing: .03em;
+	color: #fff;
+	z-index: 175;
+}
+
+em{
+	color: #a1a9b0;
+}
